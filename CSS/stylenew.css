@@ -1,0 +1,223 @@
+@charset "UTF-'8";
+
+html {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "oxygen";
+}
+
+.top-header {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.top-header-logo {
+    margin: .5em;
+    width: 30%;
+    height: 30%;
+}
+
+.top-nav {
+    text-align: center;
+    background: rgb(218, 146, 158);
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a, .card a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.top-nav a:hover {
+    background: rgb(180, 46, 69);
+    transition: all .4s;
+}
+
+.titulo-principal {
+    text-align: center;
+    background: white;
+    margin: 1.50em;   
+}
+
+.titulo-principal h1 {
+    text-shadow: 2px 2px rgb(235, 25, 60) ;
+}
+
+.titulo-principal p {
+    display: inline;
+    padding: .625em;
+    background: rgba(224, 115, 115, 0.4);
+    color: rgb(255, 255, 255);
+    border: 2px dashed rgb(219, 40, 40);
+    text-shadow: 1px 1px rgb(235, 25, 60);
+}
+
+.titulo-principal p:hover, .card:hover {
+    background: rgb(247, 137, 137);
+    transition: all .4s;
+}
+
+.produtos {
+    text-align: center;
+    margin: auto;
+}
+
+.card {
+    margin-bottom: 1.25em;
+}
+
+.card img {
+    width: 326px;
+    height: 326px;
+}
+
+.card p {
+    background: pink;
+    padding: 1.1em;
+    margin: 0;
+}
+
+.sobre-conteudo {
+    padding: 2em;
+}
+
+.sobre-conteudo h2 {
+    color: rgb(223, 52, 80);
+}
+
+.maps {
+    text-align: center;
+    padding: 1em;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.footer {
+    background: rgb(223, 146, 159);
+    color: white;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.footer-manushare {
+    background: rgb(236, 191, 198);
+    padding: 0.5em;
+}
+
+.footer li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 48.75em) {
+    
+    .top-header {
+        background: pink;
+    }
+    
+    .top-header-logo {
+        float: left;
+        width: 10%;
+        height: 10%;
+        margin-left: 10em;
+    }
+
+    .top-nav {
+        background: transparent;
+        float: right;
+        margin-top: 1.5625em;
+        margin-right: 3.125em;
+        padding-top: 2.375em;
+    }
+
+    .top-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav li {
+        display: inline-block;
+        background: rgb(236, 115, 115);
+    }
+
+    .top-nav a {
+        color: rgb(255, 255, 255);
+    }
+
+    .top-nav a:hover {
+        background: rgb(206, 62, 62);
+    }
+
+
+    .produtos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card img {
+        width: 308px;
+        height: 308px;
+    }
+
+}
+
+@media screen and (min-width: 62.5em) {
+    .titulo-principal {
+        background: rgb(231, 175, 175);
+        height: 10em;
+        padding: 1em;
+        background-position: center bottom;
+        margin: 5px 1px;
+    }
+
+}
+
+@media screen and (min-width: 74em) {
+    .titulo-principal {
+        background: rgb(231, 175, 175) url(../Imagens/banner.jpg);
+        padding: 1em 1em 1em;
+        background-position: center top;
+        margin: 5px 1px ;
+    }
+
+    .titulo-principal h1  {
+        font-size: 40px;
+        padding: 10px 0 0;
+        margin-bottom: 0;
+    }
+
+    .titulo-principal p {
+        margin: 0;
+    }
+
+    .card img {
+        width: 22.39em;
+        height: 22.39em;
+    }
+}

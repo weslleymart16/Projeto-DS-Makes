@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 204, 210);
+}
+
+.principal {
+    background: pink;
+    width: auto;
+    padding: 0 3em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.principal img {
+    height: 130px;
+    padding-top: 15px;
+    margin: 0 0 0 180px;
+}
+
+.principal ul {
+    text-align: right;
+    margin: 0px 50px 0px 0;
+    padding: 48px 0 0 0;
+    float: right;
+}
+
+.principal li {
+    list-style: none;
+    display: inline-block;
+}
+
+.principal a {
+    text-decoration: none;
+    border: 1px solid rgb(253, 143, 161);
+    padding: 15px;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    background-color: rgb(253, 143, 161, 0.3);
+}
+
+.principal a:hover {
+    background-color: rgb(243, 52, 84);
+    transition: all 1s;
+}
+
+.titulo-principal {
+    background-image: url(../Imagens/banner.jpg);
+    height: 400px;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+.titulo-principal h1 {
+    padding: 150px 0 0 0;
+    color: black;
+    text-shadow: 3px 3px 2px rgb(241, 61, 91);
+    font-size: 50px;
+    margin: 2px;
+}
+
+.titulo-principal p {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 10px;
+    color: rgb(241, 61, 91);
+    display: inline;
+    border-bottom: 2px dashed rgb(241, 61, 91);
+    cursor: pointer;
+}
+
+.titulo-principal p:hover {
+    background-color: black;
+    transition: all 1s;
+}
+
+.produtos {
+    text-align: center;
+    color: rgb(12, 1, 1);
+    margin: 10px 0 20px 0;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.produtos p {
+    background-color: rgb(241, 61, 91);
+    margin: 0;
+    padding: 15px;
+    color: white;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    width: 29%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+}
+
+.card a {
+    display: block;
+    margin: 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.card a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: all .5s;
+}
+
+.card a:hover::before {
+    background: rgb(0, 0, 0, .5);
+}
+
+.card a::after {
+    opacity: 0;
+}
+
+.card a:hover:after {
+    content: ' Veja ';
+    display: block;
+    position: absolute;
+    border: 3px solid white;
+    color: white;
+    top: 50%;
+    left: 50%;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+}
+
+.conteudo {
+    background-color: white;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+.maps {
+    margin: 10px 0 20px 0;   
+}
+
+/* Pagina de contato  */
+
+.formulario {
+    margin: 40px 0;
+}
+
+.formulario label {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.form-input {
+    display: block;
+    margin: 0 0 20px;
+    width: 50%;
+    padding: 10px 25px;
+}
+
+.rodape {
+    background-color: rgb(240, 78, 105);
+    padding: 20px;
+    text-align: center;
+    color: black;
+    text-shadow: 1.5px 1.5px 1.5px rgb(247, 247, 247);
+    margin: 2px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .principal img {
+        opacity: 0;
+    }
+
+    .principal nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .principal ul {
+        display: flex;
+    }
+    
+
+    .principal li {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+    
+}
